@@ -27,7 +27,7 @@
 #include <glew/glew.h>
 #endif
 
-#include <glfw/glfw3.h>
+#include <diego/glfw/include/GLFW/glfw3.h>
 #include <stdio.h>
 
 #ifdef _MSC_VER
@@ -70,8 +70,9 @@ static void sCreateUI()
 	ui.mouseOverMenu = false;
 
 	// Init UI
-    const char* fontPath = "../Data/DroidSans.ttf";
-    
+	//bii://DroidSans.ttf
+    const char* fontPath = "diego/box2d/Build/Data/DroidSans.ttf";
+	
 	if (RenderGLInit(fontPath) == false)
 	{
 		fprintf(stderr, "Could not init GUI renderer.\n");
@@ -430,7 +431,7 @@ static void sInterface()
 //
 int main(int argc, char** argv)
 {
-#if defined(_WIN32)
+#if defined(_WIN32) && !defined(__MINGW32__)
 	// Enable memory-leak reports
 	_CrtSetDbgFlag(_CRTDBG_LEAK_CHECK_DF | _CrtSetDbgFlag(_CRTDBG_REPORT_FLAG));
 #endif

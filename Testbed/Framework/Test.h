@@ -24,10 +24,11 @@
 
 #if defined(__APPLE__)
 #include <OpenGL/gl3.h>
+#include <random>
 #else
 #include <glew/glew.h>
 #endif
-#include <glfw/glfw3.h>
+#include <diego/glfw/include/GLFW/glfw3.h>
 
 #include <stdlib.h>
 
