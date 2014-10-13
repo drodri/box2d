@@ -1,7 +1,7 @@
 # Box2D
 
 This is a fork of the Box2D library (see Readme.txt, http://www.box2d.org), source code hosted in: https://github.com/drodri/box2d
-It is used to create a biicode ready version in: http://www.biicode.com/diego/box2d
+It is used to create a biicode ready version in: http://www.biicode.com/erincatto/box2d
 
 Instead of using the glfw library inside, it uses the biicode one: http://www.biicode.com/diego/glfw
 
