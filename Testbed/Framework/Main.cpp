@@ -71,7 +71,7 @@ static void sCreateUI()
 
 	// Init UI
 	//bii://DroidSans.ttf
-    const char* fontPath = "diego/box2d/Build/Data/DroidSans.ttf";
+    const char* fontPath = "erincatto/box2d/Build/Data/DroidSans.ttf";
 	
 	if (RenderGLInit(fontPath) == false)
 	{
